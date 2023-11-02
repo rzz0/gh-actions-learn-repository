@@ -18,6 +18,3 @@ function MainContent() {
 }
 
 export default MainContent;
-
-// new comment
-// Add yeat another comment
