@@ -6,6 +6,7 @@ on:
       - main
       - 'dev-*'
       - 'feat/**'
+      - 'hotfix/**'
   workflow_dispatch:
   push:
     branches:
