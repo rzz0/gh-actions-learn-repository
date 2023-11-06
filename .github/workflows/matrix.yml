@@ -7,6 +7,12 @@ jobs:
             matrix:
                 node-version: [12, 14, 16]
                 operationg-system: [ubuntu-latest, windows-latest]
+                include:
+                    - node-version: 18
+                      operationg-system: ubuntu-latest
+                exclude:
+                    - node-version: 12
+                      operationg-system: windows-latestq
         runs-on: ${{ matrix.operationg-system }}
         steps:
             - name: Get Code
